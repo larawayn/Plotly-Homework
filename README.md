@@ -1,4 +1,4 @@
-# University of Denver Data Analytics: Plotly Homework - Belly Button Biodiversity
+# University of Denver Data Analytics: Plotly Project - Belly Button Biodiversity
 <p align="center">
 <img width="900" height="400" src="Images/plotly.png">
 </p>
@@ -9,7 +9,7 @@
 # Development Toolkit
 ## JavaScript
 ## D3
-## Plotly
+## Plotlys
 ---
 ## Step 1: Plotly
 
