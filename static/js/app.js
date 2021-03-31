@@ -1,5 +1,5 @@
 // Pull in JSON data and fill drop down list
-var path = '../../data/samples.json';
+var path = 'data/samples.json';
 d3.json(path).then(function (data) {
   // console.log(data)
 
