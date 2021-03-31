@@ -36,7 +36,7 @@ function unpack(rows, index) {
 
 //Update plotly and retrieve JSON data
 function buildPlots(id) {
-  var path = '../../data/samples.json';
+  var path = 'data/samples.json';
   d3.json(path).then(function (data) {
     // console.log(data);
 
