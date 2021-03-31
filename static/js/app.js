@@ -40,7 +40,7 @@ function buildPlots(id) {
   d3.json(path).then(function (data) {
     // console.log(data);
 
-//Assign data for metadata
+    //Assign variable for metadata
     var metaData = data.metadata
     console.log(metaData)
 
@@ -99,9 +99,11 @@ function buildPlots(id) {
 
   // Create layout for bar chart
       var layout = {
-        title: 'Bellylbutton Bacteria Info by ID',
-        xaxis: {title:'Sample Values'},
-        yaxis: {title:'Taxonomy ID'}
+        title: 'Top Ten OTUs by ID',
+        // xaxis: {title:'Sample Values'},
+        // yaxis: {title:'Taxonomy ID'},
+        height: 600,
+        width: 600
       }
 
   // Plot bar chart
@@ -146,25 +148,25 @@ function buildPlots(id) {
       var data3 = [
         {
           value: newMetaData[0]['wfreq'],
-          title: { text: "Belly Button Washing Frequency" },
+          title: { text: "Belly Button Washing Frequency (Scrubs per Week)"},
           type: "indicator",
           mode: "gauge+number",
           gauge: {
             axis: { range: [null, 9], tickwidth: 1, tickcolor: "darkblue" },
-            bar: { color: "darkblue" },
+            bar: { color: "black" },
             bgcolor: "white",
             borderwidth: 2,
             bordercolor: "gray",
             steps: [
-              { range: [0, 1], color: "lightblue" },
-              { range: [1, 2], color: "royalblue" },
-              { range: [2, 3], color: "cyan" },
-              { range: [3, 4], color: "royalblue" },
-              { range: [4, 5], color: "cyan" },
-              { range: [5, 6], color: "royalblue" },
-              { range: [6, 7], color: "cyan" },
-              { range: [7, 8], color: "royalblue" },
-              { range: [8, 9], color: "royalblue" },
+              { range: [0, 1], color: "hsla(240, 100%, 50%, .2)" },
+              { range: [1, 2], color: "hsla(240, 100%, 50%, .3)" },
+              { range: [2, 3], color: "hsla(240, 100%, 50%, .4)" },
+              { range: [3, 4], color: "hsla(240, 100%, 50%, .5)" },
+              { range: [4, 5], color: "hsla(240, 100%, 50%, .6)" },
+              { range: [5, 6], color: "hsla(240, 100%, 50%, .7)" },
+              { range: [6, 7], color: "hsla(240, 100%, 50%, .8)" },
+              { range: [7, 8], color: "hsla(240, 100%, 50%, .9)" },
+              { range: [8, 9], color: "hsla(240, 100%, 50%, 1)" },
             ],
         }
       }];
