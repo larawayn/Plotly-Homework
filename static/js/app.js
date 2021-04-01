@@ -55,6 +55,7 @@ function buildPlots(id) {
 
     //create a list of subject's demographic data
     var demogList = d3.select('#sample-metadata').append('ul'); 
+    
 
     // append demographic info to metadata panel
     updatedMetaData.forEach(element => {var items = demogList.append('li')
