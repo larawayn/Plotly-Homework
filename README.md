@@ -9,7 +9,7 @@
 # Development Toolkit
 ## JavaScript
 ## D3
-## Plotlys
+## Plotly
 ---
 ## Step 1: Plotly
 
